@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>codemirror sample</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="lib/codemirror.js"></script>
+    <link rel="stylesheet" href="lib/codemirror.css">
+    <script src="mode/javascript/javascript.js"></script>
+    <script src="keymap/vim.js"></script>
+    <script src="addon/edit/matchbrackets.js"></script>
+    <script src="addon/edit/closebrackets.js"></script>
+    <script src="addon/selection/active-line.js"></script>
+    <script src="addon/mode/simple.js"></script>
+
+    <script type="text/javascript" src="a.js"></script>
+  </head>
+  <body>
+    <textarea id="editor" rows="5" cols="5"></textarea>
+    <textarea id="jseditor" rows="5" cols="5">var something = 'value';
+      function(input) {
+      var self = this;
+      this._callbacks.execute({
+      params: input.values
+      }, function success() {
+      }, function failure() {
+      });
+      }</textarea>
+  </body>
+</html>
